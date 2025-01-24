@@ -1,10 +1,10 @@
 package lk.ijse.ecommercepos.bo.custom.impl;
 
-import lk.ijse.eplatform.bo.custom.ProductBO;
-import lk.ijse.eplatform.dao.DaoFactory;
-import lk.ijse.eplatform.dao.custom.ProductDAO;
-import lk.ijse.eplatform.dto.ProductDTO;
-import lk.ijse.eplatform.entity.Product;
+import lk.ijse.ecommercepos.bo.custom.ProductBO;
+import lk.ijse.ecommercepos.dao.DaoFactory;
+import lk.ijse.ecommercepos.dao.custom.ProductDAO;
+import lk.ijse.ecommercepos.dto.ProductDTO;
+import lk.ijse.ecommercepos.entity.Product;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

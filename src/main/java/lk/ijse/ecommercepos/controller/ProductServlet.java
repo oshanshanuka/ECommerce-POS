@@ -7,9 +7,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
-import lk.ijse.eplatform.bo.BoFactory;
-import lk.ijse.eplatform.bo.custom.ProductBO;
-import lk.ijse.eplatform.dto.ProductDTO;
+import lk.ijse.ecommercepos.bo.BoFactory;
+import lk.ijse.ecommercepos.bo.custom.ProductBO;
+import lk.ijse.ecommercepos.dto.ProductDTO;
 
 import javax.sql.DataSource;
 import java.io.File;

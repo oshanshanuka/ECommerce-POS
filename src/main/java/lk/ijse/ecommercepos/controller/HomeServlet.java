@@ -6,7 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lk.ijse.eplatform.entity.Product;
+import lk.ijse.ecommercepos.entity.Product;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class HomeServlet extends HttpServlet {
                     String categoryQuery = "SELECT * FROM categories";
                     try (PreparedStatement categoryStmt = conn.prepareStatement(categoryQuery);
                          ResultSet categoryRs = categoryStmt.executeQuery()) {
-                        while (categoryRs.next()) {
+                        while (categoryRs.next()){
                             categories.add(new Category(
                                     categoryRs.getInt("id"),
                                     categoryRs.getString("name"),

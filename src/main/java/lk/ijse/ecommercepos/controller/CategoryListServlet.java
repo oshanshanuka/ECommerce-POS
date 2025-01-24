@@ -7,7 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lk.ijse.eplatform.dto.CategoryDTO;
+import lk.ijse.ecommercepos.dto.CategoryDTO;
 
 import javax.sql.DataSource;
 import java.io.IOException;
