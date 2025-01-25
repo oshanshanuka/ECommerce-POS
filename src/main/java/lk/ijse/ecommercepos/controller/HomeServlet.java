@@ -6,6 +6,9 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lk.ijse.ecommercepos.dto.CategoryDTO;
+import lk.ijse.ecommercepos.dto.ProductDTO;
+import lk.ijse.ecommercepos.entity.Category;
 import lk.ijse.ecommercepos.entity.Product;
 
 import javax.sql.DataSource;

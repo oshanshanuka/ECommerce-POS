@@ -1,6 +1,5 @@
-
-<%@ page import="lk.ijse.ecommercepos.dto.CategoryDTO" %>
 <%@ page import="java.util.List" %>
+<%@ page import="lk.ijse.ecommercepos.dto.CategoryDTO" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,7 +91,7 @@
 
     <!-- Navigation Buttons -->
     <div class="d-flex justify-content-center mb-4">
-        <form action="category-list" class="me-3">
+        <form action="category.jsp" class="me-3">
             <button type="submit" class="btn btn-danger">View Categories</button>
         </form>
         <form action="admin.jsp">
