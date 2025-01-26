@@ -76,6 +76,9 @@ This is a full-featured **E-Commerce Web Application** developed using **JavaEE,
 Demonstration Video
 Check out the full application demo on YouTube: **[Demo Video Link](#)**
 
+##Screenshots
+![image alt](https://github.com/oshanshanuka/ECommerce-POS/blob/7a68402ba3b706d0e1394428b2ca94447ab9f621/Screenshot%20(131).png)
+
 ## Bonus Features
 - Advanced search with filters (by price range, category, or keywords)
 - Role-based access control (Admin & Customer roles)
