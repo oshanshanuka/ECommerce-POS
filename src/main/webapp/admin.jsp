@@ -53,32 +53,32 @@
                 <ul class="nav flex-column px-3">
                     <li class="nav-item">
                         <a class="nav-link active" href="admin.jsp">
-                            <i class="bi bi-house-door"></i> Dashboard
+                            <i class="bi bi-house-door" style="color: #0d6efd"></i> Dashboard
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="product-list">
-                            <i class="bi bi-box"></i> Products
+                            <i class="bi bi-box" style="color: #0d6efd"></i> Products
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user-list">
-                            <i class="bi bi-people"></i> Users
+                            <i class="bi bi-people" style="color: #0d6efd"></i> Users
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <i class="bi bi-clipboard"></i> Orders
+                        <a class="nav-link" href="order-list">
+                            <i class="bi bi-clipboard" style="color: #0d6efd"></i> Orders
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="add-cart.jsp">
-                            <i class="bi bi-bar-chart"></i> Reports
+                            <i class="bi bi-bar-chart" style="color: #0d6efd"></i> Reports
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.jsp">
-                            <i class="bi bi-gear"></i> Settings
+                            <i class="bi bi-gear" style="color: #0d6efd"></i> Settings
                         </a>
                     </li>
                 </ul>
@@ -96,7 +96,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Manage Products</h5>
                             <p class="card-text">View and manage all the products available in the store.</p>
-                            <a href="product.jsp" class="btn btn-primary">Add Products</a>
+                            <a style="margin: 6px" href="product.jsp" class="btn btn-primary">Add Products</a>
                             <a href="update-product.jsp" class="btn btn-primary">Update Products</a><br>
                             <a href="product-list" class="btn btn-primary">View Products</a>
                         </div>
@@ -109,7 +109,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Manage Users</h5>
                             <p class="card-text">Manage and oversee all registered users.</p>
-                            <a href="admin-login.jsp" class="btn btn-success">Register Users</a>
+                            <a style="margin: 6px" href="admin-register.jsp" class="btn btn-success">Register Users</a>
+                            <a href="update-user.jsp" class="btn btn-success">Update Users</a>
                             <a href="user-list" class="btn btn-success">View Users</a>
                         </div>
                     </div>
@@ -120,8 +121,8 @@
                         <img src="uploads/admin-dash-order.jpg" class="card-img-top" alt="Orders">
                         <div class="card-body">
                             <h5 class="card-title">Manage Orders</h5>
-                            <p class="card-text">Track and process pending and completed orders.</p>
-                            <a href="#" class="btn btn-warning">View Orders</a>
+                            <p class="card-text">Track and process pending and completed orderDTOS.</p>
+                            <a href="order-list" class="btn btn-warning">View Orders</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +144,7 @@
                 <!-- Settings Card -->
                 <div class="col-md-6">
                     <div class="card shadow-sm mb-4">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Settings">
+                        <img src="uploads/set.jpg" class="card-img-top" alt="Settings">
                         <div class="card-body">
                             <h5 class="card-title">Settings</h5>
                             <p class="card-text">Update configurations and manage admin settings.</p>

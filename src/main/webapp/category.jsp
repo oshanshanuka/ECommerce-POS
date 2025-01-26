@@ -1,5 +1,6 @@
-<%@ page import="java.util.List" %>
+
 <%@ page import="lk.ijse.ecommercepos.dto.CategoryDTO" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <title>Category Management</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             background-color: #f5f7fa;
@@ -91,7 +93,7 @@
 
     <!-- Navigation Buttons -->
     <div class="d-flex justify-content-center mb-4">
-        <form action="category.jsp" class="me-3">
+        <form action="category-list" class="me-3">
             <button type="submit" class="btn btn-danger">View Categories</button>
         </form>
         <form action="admin.jsp">
@@ -168,7 +170,27 @@
 <footer>
     &copy; 2024 Category Management. All rights reserved.
 </footer>
-
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        <% if (message != null) { %>
+        Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: '<%= message %>',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+        });
+        <% } else if (error != null) { %>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: '<%= error %>',
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Try Again'
+        });
+        <% } %>
+    });
+</script>
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

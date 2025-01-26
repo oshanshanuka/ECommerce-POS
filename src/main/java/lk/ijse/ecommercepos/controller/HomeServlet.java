@@ -20,6 +20,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @WebServlet(name = "HomeServlet",value = "/home")
 public class HomeServlet extends HttpServlet {
     @Resource(name = "java:comp/env/jdbc/pool")
@@ -35,7 +36,7 @@ public class HomeServlet extends HttpServlet {
                     String categoryQuery = "SELECT * FROM categories";
                     try (PreparedStatement categoryStmt = conn.prepareStatement(categoryQuery);
                          ResultSet categoryRs = categoryStmt.executeQuery()) {
-                        while (categoryRs.next()){
+                        while (categoryRs.next()) {
                             categories.add(new Category(
                                     categoryRs.getInt("id"),
                                     categoryRs.getString("name"),

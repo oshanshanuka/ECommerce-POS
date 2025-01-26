@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: oshan
-  Date: 1/24/2025
-  Time: 11:24 PM
+  Date: 1/22/2025
+  Time: 2:34 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -53,7 +53,7 @@
 <body>
 <div class="login-container">
     <h2 class="text-center mb-4">Login</h2>
-    <form action="admin-login" method="get">
+    <form action="admin.jsp" method="get">
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
             <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
